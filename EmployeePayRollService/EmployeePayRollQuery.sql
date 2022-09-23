@@ -24,4 +24,8 @@ select * from employee_payroll where Startdate between  CAST('01-31-1995' as dat
 alter table employee_payroll Add Gender char(1)  NOT NULL default 'M'  
 update employee_payroll set Name='Priyanka' where Name= 'Prabhudas'
 update employee_payroll set Gender='F' where Name= 'Priyanka'
-
+----UC7------
+SELECT SUM(salary) as TotalSalary,gender FROM employee_payroll GROUP BY gender;
+SELECT Min(salary) as MinimumSalary,gender FROM employee_payroll GROUP BY gender;
+SELECT Max(salary) as MaxSalary,gender FROM employee_payroll GROUP BY gender;
+SELECT Count(salary) as CountIs,gender FROM employee_payroll GROUP BY gender;
