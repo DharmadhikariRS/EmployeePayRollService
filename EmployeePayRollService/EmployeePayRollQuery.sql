@@ -40,3 +40,6 @@ update employee_payroll set  Addresss='Delhi' where Name='Amarendra'
 
 EXEC sp_rename 'employee_payroll.Salary', 'BasicPay', 'COLUMN';
 Alter table employee_payroll add Deductions float,Taxable_Pay float,Income_Tax float, Net_Pay float;
+------UC10------
+insert into employee_payroll (Name,BasicPay,StartDate,Gender,PhoneNumber,Addresss,Department) values('Terissa',12000,'01-01-2000','F',11223344,'pune','Sales'),
+('Terissa',12000,'01-01-2000','F',11223344,'pune','Marketing');
