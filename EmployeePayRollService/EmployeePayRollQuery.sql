@@ -29,3 +29,7 @@ SELECT SUM(salary) as TotalSalary,gender FROM employee_payroll GROUP BY gender;
 SELECT Min(salary) as MinimumSalary,gender FROM employee_payroll GROUP BY gender;
 SELECT Max(salary) as MaxSalary,gender FROM employee_payroll GROUP BY gender;
 SELECT Count(salary) as CountIs,gender FROM employee_payroll GROUP BY gender;
+-----UC8------
+alter table employee_payroll add PhoneNumber bigint
+alter table employee_payroll add Addresss varchar(100) default 'Bombay';
+alter table employee_payroll add Department varchar(20) NOT NULL default 'IT' 
