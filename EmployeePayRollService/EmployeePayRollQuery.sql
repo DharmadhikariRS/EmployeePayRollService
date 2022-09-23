@@ -20,3 +20,8 @@ SELECT * FROM employee_payroll
 select * from employee_payroll where Name='Bhanudas'
 select * from employee_payroll where Startdate  between '01-01-1999' and  getdate()
 select * from employee_payroll where Startdate between  CAST('01-31-1995' as date) and '2025-01-01'
+-----UC6-----
+alter table employee_payroll Add Gender char(1)  NOT NULL default 'M'  
+update employee_payroll set Name='Priyanka' where Name= 'Prabhudas'
+update employee_payroll set Gender='F' where Name= 'Priyanka'
+
