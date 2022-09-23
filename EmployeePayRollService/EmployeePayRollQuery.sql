@@ -14,3 +14,5 @@ Startdate date ,
 insert into employee_payroll values('Prabhudas',25000,GETDATE())
 insert into employee_payroll values('Bhanudas',35000,GETDATE())
 insert into employee_payroll values('Amarendra',23000,GETDATE())
+-----UC4-----
+SELECT * FROM employee_payroll
