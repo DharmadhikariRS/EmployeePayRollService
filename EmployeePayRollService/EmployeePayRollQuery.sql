@@ -32,4 +32,11 @@ SELECT Count(salary) as CountIs,gender FROM employee_payroll GROUP BY gender;
 -----UC8------
 alter table employee_payroll add PhoneNumber bigint
 alter table employee_payroll add Addresss varchar(100) default 'Bombay';
-alter table employee_payroll add Department varchar(20) NOT NULL default 'IT' 
+alter table employee_payroll add Department varchar(20) NOT NULL default 'IT'
+------UC9-------
+update employee_payroll set  PhoneNumber=9999999 where Name='Bhanudas' 
+update employee_payroll set  PhoneNumber=2345123 where Name='Amarendra' 
+update employee_payroll set  Addresss='Delhi' where Name='Amarendra'
+
+EXEC sp_rename 'employee_payroll.Salary', 'BasicPay', 'COLUMN';
+Alter table employee_payroll add Deductions float,Taxable_Pay float,Income_Tax float, Net_Pay float;
